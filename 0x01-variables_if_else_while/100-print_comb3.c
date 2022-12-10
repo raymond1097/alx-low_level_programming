@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <studio.h>
 
 /**
  * main - prints all possible different combinations of two digits
@@ -12,7 +12,7 @@ int main(void)
 {
 	int ones = '0';
 	int tens = '0';
-	
+
 	for (tens = '0'; tens <= '9'; tens++)/* prints tens digit*/
 	{
 		for (ones = '0'; ones <= '9'; ones++)/* prints ones digit*/
@@ -29,8 +29,10 @@ int main(void)
 			}
 		}
 	}
-	
-	putchar('\n');
-	return (0);
 
+	putchar('\n');
+
+	return (0);
 }
+:%s/\s\+$//e
+
