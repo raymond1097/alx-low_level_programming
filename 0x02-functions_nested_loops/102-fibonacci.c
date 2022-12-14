@@ -25,7 +25,7 @@ int main(void)
 
 		l = j + k;
 		j = k;
-		k = 1;
+		k = l;
 	}
 
 	return (0);
