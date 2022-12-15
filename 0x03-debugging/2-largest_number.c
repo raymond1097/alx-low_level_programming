@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.h"
+#include "main_h"
 
 /**
  * largest_number - returns the largest of 3 numbers
