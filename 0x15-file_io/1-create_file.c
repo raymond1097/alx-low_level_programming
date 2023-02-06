@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * create_file - creates a file and adds permissions to it
+ * create_file - creates a file and adds permission to it
  * @filename: The name of the file to be created
  * @text_content: content to be placed in the created file
  * Return: 1 if successfull and -1 on err.
@@ -16,7 +16,7 @@ int create_file(const char *filename, char *text_content)
 		text_content = "";
 
 	fild = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 00600);
-	if (flid < 0)
+	if (fild < 0)
 		return (-1);
 
 	while (text_content[i])
@@ -25,6 +25,6 @@ int create_file(const char *filename, char *text_content)
 	if (chk < 0)
 		return (-1);
 
-	close(flid);
+	close(fild);
 	return (1);
 }
